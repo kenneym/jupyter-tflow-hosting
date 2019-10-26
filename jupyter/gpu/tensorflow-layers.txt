@@ -1,0 +1,56 @@
+0B: /bin/bash -c #(nop)  CMD ["bash" "-c" "source /etc/bash.bashrc && jupyter notebook --notebook-dir=/tf --ip 0.0.0.0 --no-browser --allow-root"]
+3.42kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c ${PYTHON} -m ipykernel.kernelspec
+0B: /bin/bash -c #(nop)  EXPOSE 8888
+0B: /bin/bash -c #(nop) WORKDIR /tf
+1.45MB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c apt-get autoremove -y && apt-get remove -y wget
+69B: /bin/bash -c #(nop) COPY file:7bc7e4b8c1418d5388b95fe63c567bed20704a669789915d6a13f3c2fa5b9bf3 in README.md 
+18.9kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c wget https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/keras/text_classification_with_hub.ipynb
+25.8kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c wget https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/keras/text_classification.ipynb
+29.5kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c wget https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/keras/save_and_load.ipynb
+26.9kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c wget https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/keras/regression.ipynb
+29.7kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c wget https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/keras/overfit_and_underfit.ipynb
+33.1kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c wget https://raw.githubusercontent.com/tensorflow/docs/master/site/en/tutorials/keras/classification.ipynb
+0B: /bin/bash -c #(nop) WORKDIR /tf/tensorflow-tutorials
+2.02MB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c apt-get install -y --no-install-recommends wget
+0B: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c mkdir /.local && chmod a+rwx /.local
+0B: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c mkdir -p /tf/tensorflow-tutorials && chmod -R a+rwx /tf/
+96B: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c jupyter serverextension enable --py jupyter_http_over_ws
+172kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c ${PIP} install jupyter_http_over_ws
+140MB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c ${PIP} install jupyter matplotlib
+1.77kB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c chmod a+rwx /etc/bash.bashrc
+1.77kB: /bin/bash -c #(nop) COPY file:da7319f468506ee9caec5042e533f30e76c6d3ff2b946f407b3b1e65846edd66 in /etc/bash.bashrc 
+1.76GB: |9 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 TF_PACKAGE=tensorflow-gpu TF_PACKAGE_VERSION=2.0.0 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c ${PIP} install ${TF_PACKAGE}${TF_PACKAGE_VERSION:+==${TF_PACKAGE_VERSION}}
+0B: /bin/bash -c #(nop)  ARG TF_PACKAGE_VERSION=
+0B: /bin/bash -c #(nop)  ARG TF_PACKAGE=tensorflow
+16B: |7 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c ln -s $(which ${PYTHON}) /usr/local/bin/python
+10.5MB: |7 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c ${PIP} --no-cache-dir install --upgrade     pip     setuptools
+126MB: |7 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 PIP=pip3 PYTHON=python3 USE_PYTHON_3_NOT_2=1 _PY_SUFFIX=3 /bin/bash -c apt-get update && apt-get install -y     ${PYTHON}     ${PYTHON}-pip
+0B: /bin/bash -c #(nop)  ENV LANG=C.UTF-8
+0B: /bin/bash -c #(nop)  ARG PIP=pip3
+0B: /bin/bash -c #(nop)  ARG PYTHON=python3
+0B: /bin/bash -c #(nop)  ARG _PY_SUFFIX=3
+0B: /bin/bash -c #(nop)  ARG USE_PYTHON_3_NOT_2
+31.2kB: |3 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 /bin/bash -c ln -s /usr/local/cuda/lib64/stubs/libcuda.so /usr/local/cuda/lib64/stubs/libcuda.so.1     && echo "/usr/local/cuda/lib64/stubs" > /etc/ld.so.conf.d/z-cuda-stubs.conf     && ldconfig
+0B: /bin/bash -c #(nop)  ENV LD_LIBRARY_PATH=/usr/local/cuda/extras/CUPTI/lib64:/usr/local/cuda/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+160MB: |3 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 /bin/bash -c [ ${ARCH} = ppc64le ] || (apt-get update &&         apt-get install -y --no-install-recommends libnvinfer5=5.1.5-1+cuda${CUDA}         && apt-get clean         && rm -rf /var/lib/apt/lists/*)
+1.25GB: |3 ARCH= CUDA=10.0 CUDNN=7.6.2.24-1 /bin/bash -c apt-get update && apt-get install -y --no-install-recommends         build-essential         cuda-command-line-tools-${CUDA/./-}         cuda-cublas-${CUDA/./-}         cuda-cufft-${CUDA/./-}         cuda-curand-${CUDA/./-}         cuda-cusolver-${CUDA/./-}         cuda-cusparse-${CUDA/./-}         curl         libcudnn7=${CUDNN}+cuda${CUDA}         libfreetype6-dev         libhdf5-serial-dev         libzmq3-dev         pkg-config         software-properties-common         unzip
+0B: /bin/bash -c #(nop)  SHELL [/bin/bash -c]
+0B: /bin/sh -c #(nop)  ARG CUDNN=7.6.2.24-1
+0B: /bin/sh -c #(nop)  ARG CUDA
+0B: /bin/sh -c #(nop)  ARG ARCH
+0B: /bin/sh -c #(nop)  ENV NVIDIA_REQUIRE_CUDA=cuda>=10.0 brand=tesla,driver>=384,driver<385 brand=tesla,driver>=410,driver<411
+0B: /bin/sh -c #(nop)  ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility
+0B: /bin/sh -c #(nop)  ENV NVIDIA_VISIBLE_DEVICES=all
+0B: /bin/sh -c #(nop)  ENV LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64
+0B: /bin/sh -c #(nop)  ENV PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+46B: /bin/sh -c echo "/usr/local/nvidia/lib" >> /etc/ld.so.conf.d/nvidia.conf &&     echo "/usr/local/nvidia/lib64" >> /etc/ld.so.conf.d/nvidia.conf
+29.2MB: /bin/sh -c apt-get update && apt-get install -y --no-install-recommends         cuda-cudart-$CUDA_PKG_VERSION cuda-compat-10-0 && ln -s cuda-10.0 /usr/local/cuda &&     rm -rf /var/lib/apt/lists/*
+0B: /bin/sh -c #(nop)  ENV CUDA_PKG_VERSION=10-0=10.0.130-1
+0B: /bin/sh -c #(nop)  ENV CUDA_VERSION=10.0.130
+16.5MB: /bin/sh -c apt-get update && apt-get install -y --no-install-recommends gnupg2 curl ca-certificates &&     curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64/7fa2af80.pub | apt-key add - &&     echo "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/cuda.list &&     echo "deb https://developer.download.nvidia.com/compute/machine-learning/repos/ubuntu1804/x86_64 /" > /etc/apt/sources.list.d/nvidia-ml.list &&     apt-get purge --autoremove -y curl && rm -rf /var/lib/apt/lists/*
+0B: /bin/sh -c #(nop)  LABEL maintainer=NVIDIA CORPORATION <cudatools@nvidia.com>
+0B: /bin/sh -c #(nop)  CMD ["/bin/bash"]
+7B: /bin/sh -c mkdir -p /run/systemd && echo 'docker' > /run/systemd/container
+745B: /bin/sh -c set -xe   && echo '#!/bin/sh' > /usr/sbin/policy-rc.d  && echo 'exit 101' >> /usr/sbin/policy-rc.d  && chmod +x /usr/sbin/policy-rc.d   && dpkg-divert --local --rename --add /sbin/initctl  && cp -a /usr/sbin/policy-rc.d /sbin/initctl  && sed -i 's/^exit.*/exit 0/' /sbin/initctl   && echo 'force-unsafe-io' > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup   && echo 'DPkg::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' > /etc/apt/apt.conf.d/docker-clean  && echo 'APT::Update::Post-Invoke { "rm -f /var/cache/apt/archives/*.deb /var/cache/apt/archives/partial/*.deb /var/cache/apt/*.bin || true"; };' >> /etc/apt/apt.conf.d/docker-clean  && echo 'Dir::Cache::pkgcache ""; Dir::Cache::srcpkgcache "";' >> /etc/apt/apt.conf.d/docker-clean   && echo 'Acquire::Languages "none";' > /etc/apt/apt.conf.d/docker-no-languages   && echo 'Acquire::GzipIndexes "true"; Acquire::CompressionTypes::Order:: "gz";' > /etc/apt/apt.conf.d/docker-gzip-indexes   && echo 'Apt::AutoRemove::SuggestsImportant "false";' > /etc/apt/apt.conf.d/docker-autoremove-suggests
+987kB: /bin/sh -c [ -z "$(apt-get indextargets)" ]
+63.2MB: /bin/sh -c #(nop) ADD file:c477cb0e95c56b51e0b7353f3805165393689902b82a41bbe77dbef4b31667e1 in / 

@@ -1,0 +1,27 @@
+version: '3'
+services:
+
+  jupyter:
+    build: ./cpu # select computing platform
+    restart: always
+    container_name: tflow-jupyter
+
+    environment:
+
+      # Configure HTTPS:
+      VIRTUAL_HOST: subdomain.domain.com
+      LETSENCRYPT_HOST: subdomain.domain.com
+      LETSENCRYPT_EMAIL: your@email.com
+
+      # Use lab in place of notebook 
+      JUPYTER_ENABLE_LAB: 'yes'
+
+    volumes:
+      - "/your/local/directory:/home/jovyan/work" # For CPU
+
+
+# Connect to reverse proxy:
+networks:
+  default:
+    external:
+      name: proxy_proxy-tier 
