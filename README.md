@@ -1,7 +1,6 @@
-# Jupyter + Tensorflow Containers
-## with SSL and multi-platform support
+# Jupyter + Tensorflow Containers with SSL and multi-platform support
 
-This repo contains a simplified framework to deploy Jupyter notebooks to the web using SSL and Official CA Signed Certificates.
+This repo contains a simplified framework to deploy Jupyter notebooks to the web using SSL and Official CA Signed Certificates. It supports multiple compute modalities - CPU and NVIDIA GPU-based.
 
 
 ## NGINX + Letsencrypt:
