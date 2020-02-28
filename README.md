@@ -38,6 +38,8 @@ networks:
 ```
 The name of the network is now `proxy_proxy-tier` because it was generated in a directory called `proxy`. Docker compose prefixes the name of any network or container with the name of the directory in which it was created. Thus, we have an additional `proxy_` added to the name, but rest assured this is the same network as the one we've created in the `proxy` directory.
 
+**Note that, once you have a single NGINX and letsencrypt companion container running, you can attach nearly any webservice to this proxy and letsencrypt will autogenerate certificates for that service. All you need to do is create a docker compose file listing the app you want to run, the environmental variables that tell `NGINX` which domain to point your service to, and the `networks` section you see above.**
+
 
 ### Saving Your Work:
 In order to save the notebooks locally on your machine, we bind mount the notebooks created in the Docker container to a host directory:
